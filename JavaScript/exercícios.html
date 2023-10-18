@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="script.js"> </script>
+    </head>
 
-<body>
-    <button onclick="document.getElementById('teste').innerHTML = 'lalalala' "> click </button>
-    <p id="teste"> </p>
+    <body>
+        
+        <button onclick="document.getElementById('teste').innerHTML = 'lalalala' "> click </button>
+        <p id="teste"> </p>
 
-    <button onclick="document.getElementById('teste').style.color = 'blue'"> troca de cor </button>
+        <button onclick="document.getElementById('teste').style.color = 'blue'"> troca de cor </button>
 
-    <button onclick="document.getElementById('teste').style.fontSize = '80px'"> aumentar a fonte </button>
+        <button onclick="document.getElementById('teste').style.fontSize = '80px'"> aumentar a fonte </button>
 
+<<<<<<< HEAD
     <p id="teste2"> </p>
 
     <br/>
@@ -37,5 +40,37 @@
 
 <script src="script.js"> </script>
 </body>
+=======
+
+        <script>
+            function testeJs (){ 
+                document.getElementById('teste2').innerHTML= "teste jss"
+            }
+        </script>
+
+        <p id="teste2"> </p>
+
+        <br/>
+
+        <button onclick="testeJs()"> teste js  </button>
+        
+        <p id="teste3"> </p>
+        <button onclick="testeJs2()"> teste js 2 </button>
+
+        <p id="teste4"> 
+            <script>
+                let teste = 4;
+                //teste = teste - 3;
+                teste *= 2;
+                document.getElementById("teste4").innerHTML = teste;
+            </script>
+        </p>
+
+        <button onclick="calcularDoisNumeros(1, 2, '*')"> resul </button>
+        <p id="resultado">
+        </p>
+
+    </body>
+>>>>>>> a4778f1b604b37f66007ce0032c93a250c37e0d8
 
 </html>
